@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\MAHE\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\MAHE\\.nuget\\packages"
+    ]
+  }
+}
