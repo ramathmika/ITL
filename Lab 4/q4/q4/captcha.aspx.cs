@@ -42,7 +42,7 @@ namespace q4
                 if(attempt == text[num])
                 {
                     ResultLabel.Text = "Correct!";
-                    CaptchaTextBox.Text = attempt;
+                    CaptchaTextBox.Text  = attempt;
                 }
                 else
                 {
