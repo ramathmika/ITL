@@ -68,7 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="captcha.aspx" />
-    <Content Include="Images\botdetect-captcha-cut.jpg" />
+    <Content Include="Images\captcha0.jpg" />
+    <Content Include="Images\captcha1.jpg" />
+    <Content Include="Images\captcha2.jpg" />
+    <Content Include="Images\captcha3.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
