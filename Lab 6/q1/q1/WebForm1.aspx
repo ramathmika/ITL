@@ -56,11 +56,11 @@
             <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Please enter a 10 digit number" ValidateEmptyText="false" OnServerValidate="val_Phone" ControlToValidate="TextBox3" Display="None" />
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Submit" BackColor="#B9DCFF" ForeColor="Black" Height="31px" Width="72px" style="font-family: 'Century Gothic'; font-weight: bold" OnClick="Button1_Click"/>
+            <asp:Button ID="Button1" runat="server" Text="Submit" BackColor="#B9DCFF" ForeColor="Black" Height="31px" Width="72px" style="font-family: 'Century Gothic'; font-weight: bold" OnClick="Button1_Click" />
             <br />
             <br />
             <asp:Label ID="Label1" runat="server" EnableViewState="False"></asp:Label>
-            <asp:ValidationSummary ID="errors" runat="server" />
+            <asp:ValidationSummary ID="errors" runat="server" ShowMessageBox="true" ShowSummary="false" />
         </div>
     </form>
 </body>

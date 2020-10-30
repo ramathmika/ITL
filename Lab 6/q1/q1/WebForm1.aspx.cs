@@ -16,6 +16,7 @@ namespace q1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Page.Validate();
             if (Page.IsValid)
             {
                 Label1.Text = "Successfully Submitted";
@@ -32,6 +33,13 @@ namespace q1
             }
             else
                 e.IsValid = false;
+
+            //if (!e.IsValid)
+            //{
+            //    if (!Page.IsClientScriptBlockRegistered("CustomValidation"))
+            //        Page.RegisterClientScriptBlock("CustomValidation", "<script>alert('Please enter a 10 digit number');</script>");
+
+            //}
         }
     }
 }
