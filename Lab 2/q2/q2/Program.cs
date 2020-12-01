@@ -25,12 +25,13 @@ namespace q2
         {
             switch (month)
             {
-                case 2: if (isLeapYear(year))
-                        {
-                            return 29;
-                        }
-                        else
-                            return 28;
+                case 2:
+                    if (isLeapYear(year))
+                    {
+                        return 29;
+                    }
+                    else
+                        return 28;
                 case 1: case 3: case 5: case 7: case 8: case 10: case 12: return 31;
                 default: return 30;
             }
@@ -46,12 +47,12 @@ namespace q2
             long.TryParse(Console.ReadLine(), out ticks);
 
             //Check if "ticks" is in range
-            if (ticks<10000000 || ticks > 999999999999)
+            if (ticks < 10000000 || ticks > 999999999999)
             {
                 Console.WriteLine("Not valid. Enter ticks within the range 10000000 and 999999999999");
                 return;
             }
-            
+
             //Convert ticks to seconds
             int seconds = Convert.ToInt32(ticks * Math.Pow(10.0, -7.0));
 
@@ -72,7 +73,7 @@ namespace q2
                 dateArray[5] += seconds;
 
             //If new mm is greater than 60, add it to hours.
-            if (minutes>0 && minutes + dateArray[4] >= 60)
+            if (minutes > 0 && minutes + dateArray[4] >= 60)
             {
                 hours = (minutes + dateArray[4]) / 60;
                 dateArray[4] = (minutes + dateArray[4]) % 60;
@@ -91,7 +92,7 @@ namespace q2
 
             //If new days is greater than 1, add it to DD. The ticks will never be greater than a day due to the constraint check.
             //Check if adding day changes month
-            if (days>=1)
+            if (days >= 1)
             {
                 int numOfDays = NumOfDays(dateArray[1], dateArray[2]);
                 if (days + dateArray[0] > numOfDays)
@@ -107,7 +108,10 @@ namespace q2
                     dateArray[0] += days;
             }
 
+            Console.WriteLine("New time is: ");
             Console.WriteLine(String.Join(": ", dateArray));
+            Console.Read();
         }
     }
 }
+
