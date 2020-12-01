@@ -108,7 +108,7 @@ namespace q2
                     dateArray[0] += days;
             }
 
-            Console.WriteLine("New time is: ");
+            Console.WriteLine("\nNew time is: ");
             Console.WriteLine(String.Join(": ", dateArray));
             Console.Read();
         }

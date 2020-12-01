@@ -8,7 +8,7 @@ namespace q3
         public void Yellow()
         {
             Console.WriteLine("Yellow");
-        } 
+        }
         public void Green()
         {
             Console.WriteLine("Green");
@@ -23,13 +23,22 @@ namespace q3
     {
         static void Main(string[] args)
         {
-            TrafficSignal tr = new TrafficSignal();
-            TrafficDel tryy = tr.Yellow;
-            tryy();
-            TrafficDel trr = tr.Red;
-            trr();
-            TrafficDel trg = tr.Green;
-            trg();
+            //TrafficSignal class object
+            TrafficSignal trafficSignal = new TrafficSignal();
+            
+            //Create and assign the delegate to Red delegate method and then call it
+            TrafficDel signalDelegate = trafficSignal.Red;
+            signalDelegate();
+
+            //Assign the delegate to Yellow delegate method and then call it
+            signalDelegate = trafficSignal.Yellow;
+            signalDelegate();
+
+            //Assign the delegate to Green delegate method and then call it
+            signalDelegate = trafficSignal.Green;
+            signalDelegate();
+
+            
         }
     }
 }
