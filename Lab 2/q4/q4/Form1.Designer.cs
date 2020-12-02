@@ -45,11 +45,11 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
+            "Car A",
+            "Car B",
+            "Car C",
+            "Car D",
+            "Car E"});
             this.comboBox1.Location = new System.Drawing.Point(107, 21);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -59,12 +59,13 @@
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"});
+            "Yellow",
+            "Orange",
+            "Magenta",
+            "Blue",
+            "Silver",
+            "Green",
+            "Black"});
             this.comboBox2.Location = new System.Drawing.Point(107, 62);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
@@ -92,10 +93,9 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
+            "Model A",
+            "Model B",
+            "Model C"});
             this.listBox1.Location = new System.Drawing.Point(107, 124);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);

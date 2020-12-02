@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\MAHE\\.nuget\\packages\\": {}
+    "C:\\Users\\IT_Lab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MAHE\\Desktop\\7th sem\\ITL\\Lab 3\\q1\\q1\\q1.csproj",
+      "projectUniqueName": "C:\\Users\\IT_Lab\\Desktop\\170905004\\Lab 3\\q1\\q1\\q1.csproj",
       "projectName": "q1",
-      "projectPath": "C:\\Users\\MAHE\\Desktop\\7th sem\\ITL\\Lab 3\\q1\\q1\\q1.csproj",
-      "packagesPath": "C:\\Users\\MAHE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MAHE\\Desktop\\7th sem\\ITL\\Lab 3\\q1\\q1\\obj\\",
+      "projectPath": "C:\\Users\\IT_Lab\\Desktop\\170905004\\Lab 3\\q1\\q1\\q1.csproj",
+      "packagesPath": "C:\\Users\\IT_Lab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\IT_Lab\\Desktop\\170905004\\Lab 3\\q1\\q1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MAHE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IT_Lab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -11,3 +11,16 @@ C:\Users\MAHE\Desktop\7th sem\ITL\Lab 3\q1\q1\bin\Debug\netcoreapp3.1\q1.pdb
 C:\Users\MAHE\Desktop\7th sem\ITL\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.dll
 C:\Users\MAHE\Desktop\7th sem\ITL\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.pdb
 C:\Users\MAHE\Desktop\7th sem\ITL\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.genruntimeconfig.cache
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\bin\Debug\netcoreapp3.1\q1.exe
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\bin\Debug\netcoreapp3.1\q1.deps.json
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\bin\Debug\netcoreapp3.1\q1.runtimeconfig.json
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\bin\Debug\netcoreapp3.1\q1.runtimeconfig.dev.json
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\bin\Debug\netcoreapp3.1\q1.dll
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\bin\Debug\netcoreapp3.1\q1.pdb
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.csprojAssemblyReference.cache
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.AssemblyInfoInputs.cache
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.AssemblyInfo.cs
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.csproj.CoreCompileInputs.cache
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.dll
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.pdb
+C:\Users\IT_Lab\Desktop\170905004\Lab 3\q1\q1\obj\Debug\netcoreapp3.1\q1.genruntimeconfig.cache
