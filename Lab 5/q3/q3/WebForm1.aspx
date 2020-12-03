@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Shopping</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -14,7 +14,7 @@
             <br />
             <asp:Panel ID="Input_Panel" runat="server">
                 <asp:Label ID="Label2" runat="server" Text="Name: "></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="145px" style="vertical-align: middle"></asp:TextBox>
                 <br />
                 <br />
                 <asp:Label ID="Label3" runat="server" Text="Select items to add to cart"></asp:Label>

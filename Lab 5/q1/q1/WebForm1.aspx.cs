@@ -11,23 +11,33 @@ namespace q1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownList1.SelectedIndex = -1;
-        }
-
-        protected void ControlChanged(object sender, EventArgs e)
-        {
-            if(DropDownList1.SelectedIndex == -1)
+            if (!this.IsPostBack)
             {
-                Label1.Text = "Select an item";
+                //Add items to the dropdownlist
+                DropDownList1.Items.Add(new ListItem("Toyota", "Innova"));
+                DropDownList1.Items.Add(new ListItem("Maruti", "Suzuki"));
+                DropDownList1.Items.Add(new ListItem("Tesla", "Model 3"));
+                DropDownList1.Items.Add(new ListItem("BMW", "x5"));
+
+                DropDownList1.SelectedIndex = -1;
             }
             else
             {
-                string url = "WebForm2.aspx?";
-                url += "Manufacturer=" + Server.UrlEncode(DropDownList1.SelectedItem.Text) + "&";
-                url += "Model=" + Server.UrlEncode(TextBox1.Text);
-                Response.Redirect(url);
-
+                //Update the model name
+                TextBox1.Text = DropDownList1.SelectedItem.Value;
             }
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Update the model name
+            TextBox1.Text = DropDownList1.SelectedItem.Value;
+
+            //Redirect to next page
+            string url = "WebForm2.aspx?";
+            url += "Manufacturer=" + Server.UrlEncode(DropDownList1.SelectedItem.Text) + "&";
+            url += "Model=" + Server.UrlEncode(TextBox1.Text);
+            Response.Redirect(url);
         }
     }
 }

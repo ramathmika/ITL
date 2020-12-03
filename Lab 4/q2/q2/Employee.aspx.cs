@@ -14,6 +14,7 @@ namespace q2
             if (this.IsPostBack == false)
             {
                 //Add Employee IDs to the dropdown list
+                EmployeeIDList.Items.Add("");
                 EmployeeIDList.Items.Add("1001");
                 EmployeeIDList.Items.Add("1002");
                 EmployeeIDList.Items.Add("1003");
@@ -26,17 +27,28 @@ namespace q2
         }
         protected void UpdateInfo(Object sender, EventArgs e)
         {
-            string imageurl = "~/Images/" + EmployeeIDList.SelectedItem.Text + ".jpg";
-            EmployeeImage.ImageUrl = imageurl;
+            //Select Employee image
+            if (EmployeeIDList.SelectedIndex != 0)
+            {
+                string imageurl = "~/Images/" + EmployeeIDList.SelectedItem.Text + ".png";
+                EmployeeImage.ImageUrl = imageurl;
+            }
+            else
+                EmployeeImage.ImageUrl = "";
+
+            //Clear the other selections
+            EmployeeTextBox.Text = "";
+            DOJTextBox.Text = "";
+            ResultLabel.Text = "";
         }
 
         protected void PrintResult(object sender, EventArgs e)
         {
+            //Find years of experience
             DateTime date = DateTime.Today;
             int year = date.Year;
             string[] data = DOJTextBox.Text.Split('-');
             var JoinedYear = data[0];
-            EmployeeTextBox.Text = JoinedYear;
             if (year - Int32.Parse(JoinedYear) > 5)
                 ResultLabel.Text = "YES";
             else

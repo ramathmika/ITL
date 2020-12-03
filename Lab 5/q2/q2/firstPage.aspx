@@ -4,21 +4,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>firstPage</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            Name:
-            <asp:TextBox ID="NameTextBox" runat="server"></asp:TextBox>
+            Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="NameTextBox" runat="server" Height="20px" Width="145px" style="vertical-align: middle" ></asp:TextBox>
             <br />
             <br />
             Roll Number:
-            <asp:TextBox ID="RollTextBox" runat="server"></asp:TextBox>
+            <asp:TextBox ID="RollTextBox" runat="server" Height="20px" Width="145px" style="vertical-align: middle"></asp:TextBox>
             <br />
             <br />
-            Subject:
-            <asp:DropDownList ID="SubjectDropDownList" runat="server" Height="16px" Width="127px">
+            Subject:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <asp:DropDownList ID="SubjectDropDownList" runat="server" Height="25px" Width="145px" style="vertical-align: middle">
                 <asp:ListItem>English</asp:ListItem>
                 <asp:ListItem>Math</asp:ListItem>
                 <asp:ListItem>Science</asp:ListItem>

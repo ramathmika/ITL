@@ -9,7 +9,7 @@ namespace q4
 {
     public partial class captcha : System.Web.UI.Page
     {
-        //To kee a count on number of tries
+        //To keeP a count on number of tries
         static int count;
 
         //Initialise the text in each image
@@ -18,14 +18,12 @@ namespace q4
         //To choose a random captcha from tthe set of images
         Random r = new Random();
         static int num;
-        //static string res;
         protected void Page_Load(object sender, EventArgs e)
         {
             if(this.IsPostBack == false)
             {
                 count = 0;
                 num = r.Next(0, 3);
-                //res = text[num];
 
                 string url = "~/Images/captcha" + num.ToString() + ".jpg";
                 CaptchaImage.ImageUrl = url;

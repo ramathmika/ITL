@@ -10,19 +10,14 @@
     <form id="form1" runat="server">
         <div>
             Choose the car manufacturer<br />
-            <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="124px">
-                <asp:ListItem>Toyota</asp:ListItem>
-                <asp:ListItem>Maruti</asp:ListItem>
-                <asp:ListItem>Tesla</asp:ListItem>
-                <asp:ListItem>BMW</asp:ListItem>
-                <asp:ListItem>Honda</asp:ListItem>
+            <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="145px" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
             </asp:DropDownList>
             <br />
             <br />
             Model Name:<br />
-            <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="ControlChanged"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Height="25px" Width="145px"></asp:TextBox>
             <br />
-            <asp:Label ID="Label1" runat="server"></asp:Label>
+            <br />
         </div>
     </form>
 </body>

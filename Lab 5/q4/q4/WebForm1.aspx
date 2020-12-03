@@ -10,14 +10,14 @@
     <form id="form1" runat="server">
         <div>
             Username:
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="145px" style="vertical-align: middle"></asp:TextBox>
             <br />
             <br />
             Password:
-            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Height="16px" Width="145px" style="vertical-align: middle"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" Height="32px" Width="75px" />
             <br />
             <br />
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>

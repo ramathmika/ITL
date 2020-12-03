@@ -13,7 +13,7 @@ namespace q3
         {
             if (!this.IsPostBack)
             {
-                HttpCookie cookie = Request.Cookies["Shoppin"];
+                HttpCookie cookie = Request.Cookies["Shopping"];
                 Label4.Text = "";
                 if(cookie == null)
                 {
@@ -37,10 +37,10 @@ namespace q3
         protected void UpdateCart()
         {
             
-            HttpCookie cookie = Request.Cookies["Shoppin"];
+            HttpCookie cookie = Request.Cookies["Shopping"];
             if (cookie == null)
             {
-                cookie = new HttpCookie("Shoppin");
+                cookie = new HttpCookie("Shopping");
                 cookie["cart"] = "";
                 
             }

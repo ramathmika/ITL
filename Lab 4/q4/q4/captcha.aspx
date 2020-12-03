@@ -14,11 +14,13 @@
 &nbsp;&nbsp;&nbsp; Enter the text<br />
 &nbsp;&nbsp;&nbsp;
             <br />
+            &nbsp;
             <asp:Image ID="CaptchaImage" runat="server" Height="44px" ImageUrl="~/Images/botdetect-captcha-cut.jpg" Width="185px" />
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="CaptchaTextBox" runat="server" style="margin-top: 0px" Width="151px" OnTextChanged="AttemptMade" AutoPostBack="true"></asp:TextBox>
+            <asp:TextBox ID="CaptchaTextBox" runat="server" style="margin-top: 0px" Width="157px" OnTextChanged="AttemptMade" AutoPostBack="true" Height="18px"></asp:TextBox>
+            <br />
             <br />
 &nbsp;&nbsp;&nbsp;
             <asp:Label ID="ResultLabel" runat="server"></asp:Label>

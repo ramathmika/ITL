@@ -68,11 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Employee.aspx" />
-    <Content Include="Images\1001.jpg" />
-    <Content Include="Images\1002.jpg" />
-    <Content Include="Images\1003.jpg" />
-    <Content Include="Images\1004.jpg" />
-    <Content Include="Images\1005.jpg" />
+    <Content Include="Images\1001.png" />
+    <Content Include="Images\1002.png" />
+    <Content Include="Images\1003.png" />
+    <Content Include="Images\1004.png" />
+    <Content Include="Images\1005.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
