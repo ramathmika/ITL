@@ -57,3 +57,13 @@ C:\Users\MAHE\Desktop\7th sem\ITL\Lab 6\q4\q4\obj\Debug\q4.csproj.CoreCompileInp
 C:\Users\MAHE\Desktop\7th sem\ITL\Lab 6\q4\q4\obj\Debug\q4.csproj.CopyComplete
 C:\Users\MAHE\Desktop\7th sem\ITL\Lab 6\q4\q4\obj\Debug\q4.dll
 C:\Users\MAHE\Desktop\7th sem\ITL\Lab 6\q4\q4\obj\Debug\q4.pdb
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\bin\q4.dll.config
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\bin\q4.dll
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\bin\q4.pdb
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\obj\Debug\q4.csprojAssemblyReference.cache
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\obj\Debug\q4.csproj.CoreCompileInputs.cache
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\obj\Debug\q4.csproj.CopyComplete
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\obj\Debug\q4.dll
+C:\Users\IT_Lab\Desktop\170905004\Lab 6\q4\q4\obj\Debug\q4.pdb

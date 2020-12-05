@@ -25,14 +25,22 @@ namespace q1
 
         protected void val_Phone(object source, ServerValidateEventArgs e)
         {
-            string num = TextBox3.Text;
-            double t;
-            if (num.Length == 10 && double.TryParse(num, out t))
-            {
-                e.IsValid = true;
-            }
-            else
+            if (String.IsNullOrWhiteSpace(TextBox3.Text))
                 e.IsValid = false;
+            else
+            {
+                string num = TextBox3.Text;
+                double t;
+                if (num.Length == 10 && double.TryParse(num, out t))
+                {
+                    e.IsValid = true;
+                }
+                else
+                {
+                    e.IsValid = false;
+                }
+            }
+
 
             //if (!e.IsValid)
             //{

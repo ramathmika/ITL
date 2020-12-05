@@ -16,9 +16,6 @@ namespace q4
                 DropDownList1.Items.Add(new ListItem("Samsung M20", "Screen: 6.30-inch (1080x2340) | Memory: 3+32GB | Camera: 8MP, 13+5MP | Battery: 5000mAh"));
                 DropDownList1.Items.Add(new ListItem("iPhone X", "Screen: 5.80-inch (1125x2436) | Memory: 3+64GB | Camera: 7MP, 12+12MP | Battery: 2716mAh"));
                 DropDownList1.Items.Add(new ListItem("OnePlus 7T", "Screen: 6.55-inch (1080x2400)) | Memory: 8+128GB | Camera: 16MP, 48+16+12MP | Battery: 3800mAh"));
-                //DropDownList1.Items.Add(new ListItem("Samsung M20", "hi"));
-                //DropDownList1.Items.Add(new ListItem("iPhone X", "hello"));
-                //DropDownList1.Items.Add(new ListItem("OnePlus 7T", "how are you"));
             }
             
         }

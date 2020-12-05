@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-<body>
+<body style="height: 100%">
     <form id="form1" runat="server">
         <div style="font-family: 'Century Gothic'; background-color: #99CCFF; width:100%; text-align: center; overflow: scroll; height: 100%; font-size: medium; font-weight: bold;">
             <br />
@@ -42,6 +42,7 @@
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class:&nbsp;
             <asp:TextBox ID="TextBox1" runat="server" style="vertical-align: middle; margin-left: 105px" Width="138px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please enter a class" Display="None" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
             <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="You must be studying in Class 6-12" Display="None" ControlToValidate="TextBox1" MaximumValue="12" MinimumValue="6" Type="Integer"></asp:RangeValidator>
             <br />
             <br />
@@ -53,14 +54,15 @@
             <br />
             Parent Phone Number:
             <asp:TextBox ID="TextBox3" runat="server" Width="143px" style="vertical-align: middle"></asp:TextBox>
-            <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Please enter a 10 digit number" ValidateEmptyText="false" OnServerValidate="val_Phone" ControlToValidate="TextBox3" Display="None" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Please enter a 10 digit phone number" Display="None" ControlToValidate="TextBox3"></asp:RequiredFieldValidator>
+            <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Please enter a 10 digit phone number" ValidateEmptyText="false" OnServerValidate="val_Phone" ControlToValidate="TextBox3" Display="None"/>
             <br />
             <br />
             <asp:Button ID="Button1" runat="server" Text="Submit" BackColor="#B9DCFF" ForeColor="Black" Height="31px" Width="72px" style="font-family: 'Century Gothic'; font-weight: bold" OnClick="Button1_Click" />
             <br />
             <br />
             <asp:Label ID="Label1" runat="server" EnableViewState="False"></asp:Label>
-            <asp:ValidationSummary ID="errors" runat="server" ShowMessageBox="true" ShowSummary="false" />
+            <asp:ValidationSummary ID="errors" runat="server" ShowMessageBox="true" ShowSummary="true" />
         </div>
     </form>
 </body>

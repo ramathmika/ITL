@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Baggages.aspx" />
     <Content Include="Electronics.aspx" />
+    <Content Include="Images\backgound.jpg" />
     <Content Include="Images\backpacks.png" />
     <Content Include="Images\laptop-bags.jpg" />
     <Content Include="Images\laptops.jpg" />
@@ -114,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ecommMaster.Master" />
+    <Content Include="App_Themes\DropDown\DropDown.skin" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

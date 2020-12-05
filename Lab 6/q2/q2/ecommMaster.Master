@@ -26,10 +26,10 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: lavenderblush;">
     <form id="form1" runat="server">
         <div style="text-align: center; font-family: Bahnschrift; color: darkslategray; background-color: lavenderblush">
-            <h1 style="font-family: 'BankGothic Md BT'; color: black">Name of the Firm</h1>
+            <h1 style="font-family: 'BankGothic Md BT'; color: black">[Name of the Firm]</h1>
             <asp:Image ID="Image1" runat="server" Height="91px" Width="96px" ImageUrl="~/Images/logo.png" /><br />
             <br />
             Phone: 9876543210<br />
