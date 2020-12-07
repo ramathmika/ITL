@@ -81,6 +81,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Textbox\Skin1.skin" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
