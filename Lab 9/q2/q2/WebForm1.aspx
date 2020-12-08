@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div style="text-align:center">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=TravelPackage;Integrated Security=True" SelectCommand="SELECT place FROM Packs"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Travel_170905004ConnectionString %>" SelectCommand="SELECT place FROM Packs"></asp:SqlDataSource>
             <h3>Choose a travel pack:</h3>
             <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="place" Height="118px" Width="147px"></asp:ListBox>
             <br />

@@ -34,7 +34,7 @@ namespace q1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Label1.Text = "<h4>" + "You chose: " + "</h4>" + "<br/>" + "<b>" + "Fruits: " + "</b>" + "<br/>";
+            Label1.Text = "<h4>" + "You chose: " + "</h4>" + "<b>" + "Fruits: " + "</b>" + "<br/>";
             foreach(ListItem itm in CheckBoxList1.Items)
             {
                 if(itm.Selected == true)
@@ -43,8 +43,10 @@ namespace q1
                 }
             }
 
-            Label1.Text += "<b>" + "Icecream: " + "</b>" + "<br/>" + RadioButtonList1.SelectedItem.Text + "<br/>";
-            Label1.Text += "<b>" + "Price: " + "</b>" + "Rs 70";
+            Label1.Text += "<b>" + "<br/>" + "Icecreams: " + "</b>" + "<br/>" + RadioButtonList1.SelectedItem.Text + "<br/>";
+            Label1.Text += "<b>" + "<br/>" + "Price: " + "</b>";
+            Random r = new Random();
+            Label1.Text += r.Next(70, 140);
         }
     }
 }

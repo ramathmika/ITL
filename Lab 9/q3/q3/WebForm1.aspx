@@ -15,7 +15,7 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=City;Integrated Security=True" SelectCommand="SELECT CityName from City WHERE StateID=@StateID">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:City_170905004ConnectionString %>" SelectCommand="SELECT CityName from City WHERE StateID=@StateID">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="DropDownList1" DefaultValue="0" Name="StateID" PropertyName="SelectedValue" />
                 </SelectParameters>

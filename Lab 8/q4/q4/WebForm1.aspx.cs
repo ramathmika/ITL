@@ -21,7 +21,8 @@ namespace q4
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Company;Integrated Security=True";
+            con.ConnectionString = @"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Company_170905004;Integrated Security=True";
+            
             SqlCommand com = new SqlCommand("INSERT INTO Works(person_name, company_name, salary) VALUES(@name, @company, @salary); INSERT INTO LIVES(person_name, street, city) VALUES(@name, @street, @city)", con);
             com.Parameters.AddWithValue("@name", TextBox1.Text);
             com.Parameters.AddWithValue("@company", TextBox2.Text);
@@ -33,7 +34,18 @@ namespace q4
             {
                 con.Open();
                 com.ExecuteNonQuery();
-                Label2.Text = "Record successfuly iInserted";
+                Label2.Text = "Record successfuly inserted";
+
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
+                TextBox5.Text = "";
+                TextBox6.Text = "";
+            }
+            catch(Exception ex)
+            {
+                Label2.Text = ex.Message;
             }
             finally
             {
@@ -44,9 +56,11 @@ namespace q4
         protected void Button2_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Company;Integrated Security=True";
+            con.ConnectionString = @"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Company_170905004;Integrated Security=True";
+            
             SqlCommand com = new SqlCommand("SELECT L.person_name, city FROM Works W, Lives L where W.person_name=L.person_name and W.company_name = @company", con);
             com.Parameters.AddWithValue("@company", TextBox6.Text);
+            
             SqlDataReader reader;
 
             try
@@ -58,6 +72,16 @@ namespace q4
                 {
                     Label1.Text += reader["person_name"] + " lives in " + reader["city"] + "<br/>";
                 }
+                
+                TextBox1.Text = "";
+                TextBox2.Text = "";
+                TextBox3.Text = "";
+                TextBox4.Text = "";
+                TextBox5.Text = "";
+            }
+            catch (Exception ex)
+            {
+                Label1.Text = ex.Message;
             }
             finally
             {

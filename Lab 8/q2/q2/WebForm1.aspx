@@ -8,12 +8,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="text-align: center">
+        <div style="text-align: center; margin-left: auto; margin-right: auto">
             Choose the genre: &nbsp;&nbsp;
-            <asp:DropDownList ID="DropDownList1" runat="server" Height="27px" Width="84px" style="vertical-align: middle" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="DropDownList1" runat="server" Height="30px" Width="100px" style="vertical-align: middle" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
             <br />
             <br />
-            <asp:ListBox ID="ListBox1" runat="server" Height="82px" Width="98px" AutoPostBack="True" ></asp:ListBox>
+            <asp:ListBox ID="ListBox1" runat="server" Height="120px" Width="150px" AutoPostBack="True" ></asp:ListBox>
             <br />
             <br />
             <%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Test;Integrated Security=True" SelectCommand="SelectCommand=&quot;SELECT name, age from Legends WHERE name=@name and category=@category&quot;" >
@@ -22,13 +22,15 @@
                     <asp:FormParameter DefaultValue="cat" FormField="DropDownList1.SelectedItem.Text" Name="@category" />
                 </SelectParameters>
             </asp:SqlDataSource>--%>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Test;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT name, age FROM Legends WHERE name=@Name and category=@Category">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Test_170905004ConnectionString %>" SelectCommand="SELECT name, age FROM Legends WHERE name=@Name and category=@Category">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="ListBox1" Name="Name" PropertyName="SelectedItem.Text" Type="String" />
                     <asp:ControlParameter ControlID="DropDownList1" Name="Category" PropertyName="SelectedItem.Text" Type="String" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="GridView1" runat="server" AllowSorting="True" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal" AutoGenerateColumns="False">
+            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+            <br />
+            <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Horizontal" AutoGenerateColumns="False" style=" margin-left: auto; margin-right: auto">
                 <Columns>
                     <asp:TemplateField>
                         <ItemTemplate>

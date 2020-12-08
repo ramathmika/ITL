@@ -9,18 +9,18 @@
 <body>
     <form id="form1" runat="server">
         <div style="text-align: center">
-            Current price of Vanilla icecream: 
+            Price of Vanilla icecream: 
             <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
 
             <br />
 
             <br />
             Enter new price of Vanilla icecream:
-            <asp:TextBox ID="TextBox1" runat="server" style="vertical-align:middle" OnTextChanged="textChanged"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" style="vertical-align:middle" Height="25px"></asp:TextBox>
 
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Update" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="Update" OnClick="Button1_Click" Height="30px" Width="75px" />
 
         </div>
     </form>

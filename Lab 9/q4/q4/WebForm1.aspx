@@ -8,29 +8,29 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="text-align: center">
 
             Choose category:
-            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="30px" Width="100px" style="vertical-align:middle">
             </asp:DropDownList>
             <br />
             <br />
-            Choose actor:<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Test;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT id, name FROM Legends WHERE category=@category">
+            Choose actor:<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Test_170905004ConnectionString %>" SelectCommand="SELECT id, name FROM Legends WHERE category=@category">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="DropDownList1" DefaultValue="-" Name="category" PropertyName="SelectedItem.Text" />
                 </SelectParameters>
             </asp:SqlDataSource>
             <br />
-            <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="name" DataValueField="id" AutoPostBack="True"></asp:ListBox>
+            <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="name" DataValueField="id" AutoPostBack="True" Height="115px" Width="120px"></asp:ListBox>
             <br />
             <br />
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Test;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM Legends WHERE name=@name and id=@id">
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Test_170905004ConnectionString %>" SelectCommand="SELECT * FROM Legends WHERE name=@name and id=@id">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="ListBox1" Name="name" PropertyName="SelectedItem.Text" />
                     <asp:ControlParameter ControlID="ListBox1" Name="id" PropertyName="SelectedValue" />
                 </SelectParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource2">
+            <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource2" style="margin: auto">
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:BoundField DataField="id" HeaderText="id" ReadOnly="True" SortExpression="id" />

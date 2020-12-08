@@ -7,6 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.Sql;
+using System.Configuration;
 namespace q2
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -34,19 +35,28 @@ namespace q2
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ListBox1.Items.Clear();
+            
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Data Source=(localdb)\MSSQLlocalDB;Initial Catalog=Test;Integrated Security=True";
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["Test_170905004ConnectionString"].ConnectionString;
+
+
             try
             {
                 con.Open();
+                
                 SqlCommand command = new SqlCommand("SELECT name from Legends WHERE category=@category", con);
                 command.Parameters.AddWithValue("@category", DropDownList1.SelectedItem.Text);
+                
                 SqlDataReader reader;
                 reader = command.ExecuteReader();
                 while (reader.Read())
                 {
                     ListBox1.Items.Add(reader["name"].ToString());
                 }
+            }
+            catch(Exception ex)
+            {
+                Label1.Text = ex.Message;
             }
             finally
             {
