@@ -1,0 +1,10 @@
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\bin\Debug\Form Sample.exe.config
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\bin\Debug\Form Sample.exe
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\bin\Debug\Form Sample.pdb
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\obj\Debug\Form Sample.csprojAssemblyReference.cache
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\obj\Debug\Form_Sample.Form1.resources
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\obj\Debug\Form_Sample.Properties.Resources.resources
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\obj\Debug\Form Sample.csproj.GenerateResource.cache
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\obj\Debug\Form Sample.csproj.CoreCompileInputs.cache
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\obj\Debug\Form Sample.exe
+C:\Users\MAHE\Desktop\ITL\Lab 2\Form Sample\Form Sample\obj\Debug\Form Sample.pdb

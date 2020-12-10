@@ -1,3 +1,0 @@
-﻿<asp:Label runat="server" Font-Bold="true" Font-Names="Comic Sans MS" ForeColor="BlueViolet" Font-Size="Large"/>
-<asp:TextBox runat="server" Font-Bold="true" Font-Names="Comic Sans MS" ForeColor="BlueViolet" Font-Size="Large"/>
-<asp:Button runat="server" Font-Bold="true" Font-Names="Comic Sans MS" ForeColor="BlueViolet" Font-Size="Large"/>
