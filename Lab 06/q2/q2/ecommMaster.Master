@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ecommMaster.master.cs" Inherits="q2.ecommMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>E-Commerce Site</title>
+    <style>
+        .first{
+            position: absolute;
+            width: 300px;
+            top: 293px;
+            left: 20px;
+        }
+        .second{
+            position: absolute;
+            left: 340px;
+            width: 300px;
+            top: 293px;
+        }
+        .third{
+            position: absolute;
+            left: 660px;
+            width: 300px;
+            top: 293px;
+        }
+    </style>
+</head>
+<body style="background-color: lavenderblush;">
+    <form id="form1" runat="server">
+        <div style="text-align: center; font-family: Bahnschrift; color: darkslategray; background-color: lavenderblush">
+            <h1 style="font-family: 'BankGothic Md BT'; color: black">[Name of the Firm]</h1>
+            <asp:Image ID="Image1" runat="server" Height="91px" Width="96px" ImageUrl="~/Images/logo.png" /><br />
+            <br />
+            Phone: 9876543210<br />
+            Email: example@nameoffirm.com<br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Electronics.aspx" ForeColor="#0066cc">Electronics</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Baggages.aspx" ForeColor="#0066cc">Baggages</asp:HyperLink>
+            &nbsp;&nbsp;&nbsp;
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Offers.aspx" ForeColor="#0066cc">Offers</asp:HyperLink>
+            <br /><br /><br />
+            <div class="first">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="second">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="third">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

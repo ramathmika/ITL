@@ -1,3 +1,0 @@
-﻿<asp:Label runat="server" Font-Italic="true" Font-Names="Times New Roman" ForeColor="DarkGray" Font-Size="Small"/>
-<asp:TextBox runat="server" Font-Italic="true" Font-Names="Times New Roman" ForeColor="DarkGray" Font-Size="Small"/>
-<asp:Button runat="server" Font-Italic="true" Font-Names="Times New Roman" ForeColor="DarkGray" Font-Size="Small"/>

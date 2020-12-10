@@ -1,2 +1,0 @@
-﻿<asp:TextBox runat="server" Height="20px" Width="120px" style="vertical-align: middle"/>
-<asp:Button runat="server" Height="25px" Width="100px" />

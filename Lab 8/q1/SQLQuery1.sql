@@ -1,1 +1,0 @@
-﻿select City from Staff
