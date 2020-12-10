@@ -19,11 +19,10 @@ namespace q1
             if(e.Row.RowType == DataControlRowType.DataRow)
             {
                 int age = (int)DataBinder.Eval(e.Row.DataItem, "Age");
-                //string[] detail = details.Split(':');
                 if(age > 35)
                 {
-                    e.Row.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-                    e.Row.ForeColor = System.Drawing.Color.DarkBlue;
+                    e.Row.BackColor = System.Drawing.Color.LightGray ;
+                    e.Row.ForeColor = System.Drawing.Color.DarkSlateGray;
                     e.Row.Font.Bold = true;
                 }
             }
